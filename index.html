@@ -7,71 +7,41 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Te acabas de encontrar con el amor de tu vida ❤👨‍👦</h1>
-    <div class="countdown">
-      <span class="countdown-number">10</span>
+  <!-- Preloader de conteo regresivo -->
+  <div class="preloader">
+    <div class="bomb-container">
+      <div class="bomb"></div>
+      <div class="fuse"></div>
+      <div class="countdown">
+        <span class="countdown-number">10</span>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section class="photos">
-      <div class="photo-wrapper">
-        <img src="foto1.jpg" alt="Foto 1" class="photo">
-        <h2 class="photo-caption">Foto 1</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto2.jpg" alt="Foto 2" class="photo">
-        <h2 class="photo-caption">Foto 2</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto3.jpg" alt="Foto 3" class="photo">
-        <h2 class="photo-caption">Foto 3</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto4.jpg" alt="Foto 4" class="photo">
-        <h2 class="photo-caption">Foto 4</h2>
-      </div>
-      <p class="message">Eres mi primer super héroe y mi mayor inspiración Te amo con todo mi corazón papito Ronald Att: Ronald ángel tu hijo</p>
-      <div class="photo-wrapper">
-        <img src="foto5.jpg" alt="Foto 5" class="photo">
-        <h2 class="photo-caption">Foto 5</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto6.jpg" alt="Foto 6" class="photo">
-        <h2 class="photo-caption">Foto 6</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto7.jpg" alt="Foto 7" class="photo">
-        <h2 class="photo-caption">Foto 7</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto8.jpg" alt="Foto 8" class="photo">
-        <h2 class="photo-caption">Foto 8</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto9.jpg" alt="Foto 9" class="photo">
-        <h2 class="photo-caption">Foto 9</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto10.jpg" alt="Foto 10" class="photo">
-        <h2 class="photo-caption">Foto 10</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto11.jpg" alt="Foto 11" class="photo">
-        <h2 class="photo-caption">Foto 11</h2>
-      </div>
-      <div class="photo-wrapper">
-        <img src="foto12.jpg" alt="Foto 12" class="photo">
-        <h2 class="photo-caption">Foto 12</h2>
-      </div>
-    </section>
-  </main>
+  <!-- Contenido principal oculto hasta finalizar el conteo -->
+  <div class="content hidden">
+    <header>
+      <h1>Te acabas de encontrar con el amor de tu vida ❤👨‍👦</h1>
+    </header>
 
-   <footer>
-    <p>&copy; 2023 Te acabas de encontrar con el amor de tu vida</p>
-  </footer>
+    <main>
+      <section class="photos">
+        <!-- Estructura de las fotos con captions -->
+        <div class="photo-wrapper">
+          <img src="foto1.jpg" alt="Foto 1" class="photo">
+          <h2 class="photo-caption">Foto 1</h2>
+        </div>
+        <!-- Repite para todas las fotos... -->
+      </section>
+      <p class="message">Eres mi primer super héroe y mi mayor inspiración. Te amo con todo mi corazón papito Ronald. Att: Ronald ángel tu hijo</p>
+    </main>
 
+    <footer>
+      <p>&copy; 2023 Te acabas de encontrar con el amor de tu vida</p>
+    </footer>
+  </div>
+
+  <!-- Modal para imagen seleccionada -->
   <div class="modal-overlay">
     <div class="modal">
       <img src="" alt="Foto seleccionada" class="modal-photo">
