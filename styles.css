@@ -12,24 +12,12 @@ header {
   padding: 30px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 h1 {
   margin: 0;
   font-size: 48px;
   animation: pulse 2s infinite;
-}
-
-.countdown {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 72px;
-  font-weight: bold;
-  opacity: 0;
-  animation: countdown 10s ease-in-out forwards;
 }
 
 main {
@@ -40,12 +28,27 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  opacity: 0;
-  transform: translateY(50px);
-  animation: fadeInUp 1s ease forwards;
 }
 
-/* Estilos del preloader y la bomba */
+.photo-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+}
+
+.photo-wrapper:hover .photo {
+  transform: scale(1.1);
+}
+
+/* Preloader */
 .preloader {
   position: fixed;
   top: 0;
@@ -60,7 +63,6 @@ main {
 }
 
 .bomb-container {
-  position: relative;
   text-align: center;
 }
 
@@ -70,7 +72,6 @@ main {
   background-color: #333;
   border-radius: 50%;
   margin: 0 auto;
-  position: relative;
 }
 
 .fuse {
@@ -84,15 +85,17 @@ main {
   animation: burn 10s linear forwards;
 }
 
+.countdown-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Animación de quema de la mecha */
 @keyframes burn {
   0% { height: 40px; }
   100% { height: 0; }
-}
-
-.countdown-number {
-  font-size: 48px;
-  color: #333;
-  font-weight: bold;
 }
 
 /* Modal styles */
