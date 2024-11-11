@@ -15,7 +15,7 @@ function countdown() {
 
     if (count === -1) {
       clearInterval(countdownInterval);
-      preloader.style.display = 'none';
+      preloader.style.display = 'none';  // Ocultar preloader
     }
   }, 1000);
 }
