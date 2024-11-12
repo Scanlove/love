@@ -47,7 +47,7 @@ function showPhoto(index) {
   photoWrappers.forEach((wrapper, i) => {
     wrapper.classList.toggle('active', i === index);
   });
-  message.style.display = index === 3 ? 'block' : 'none'; // Mostrar el mensaje después de la cuarta foto
+ 
 }
 
 // Función para avanzar a la siguiente foto
