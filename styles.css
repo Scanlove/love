@@ -16,39 +16,39 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 36px;
   animation: pulse 2s infinite;
 }
 
 main {
-  padding: 40px;
+  padding: 20px;
 }
 
-/* Ajuste para mostrar cada foto en pantalla completa una por una */
 .photos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .photo-wrapper {
-  display: none; /* Ocultamos todas las fotos por defecto */
-  width: 100%;
-  height: 100vh;
-}
-
-.photo-wrapper.active {
-  display: block; /* Solo la foto activa se muestra */
+  width: 90%; /* Ancho adecuado para móviles */
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .photo {
-  width: auto;
-  height: 100%;
+  width: 100%; /* Ajusta la foto para ocupar el ancho completo del contenedor */
+  height: auto;
   object-fit: cover;
+}
+
+.message {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
 }
 
 /* Preloader */
