@@ -54,7 +54,11 @@ main {
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
   width: 100%;
   border-radius: 5px;
+  display: block; /* Asegura que siempre esté visible */
+  visibility: visible; /* Garantiza que no esté oculto */
+  opacity: 1; /* Hace que sea completamente visible */
 }
+
 
 
 /* Preloader */
